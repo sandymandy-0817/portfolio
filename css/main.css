@@ -1,0 +1,408 @@
+#aboutme, #projects {
+  background-color: #fff !important;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(30px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+.noscroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.modal_box {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal_box .modal {
+  width: 420px;
+  height: 200px;
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.modal_box .modal p {
+  line-height: 40px;
+}
+.modal_box .modal button {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  background-color: #ff96d8;
+  border: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#home {
+  text-align: center;
+  position: relative;
+}
+#home .title {
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#home .title h2 {
+  font-size: 13rem;
+  margin-bottom: 30px;
+  background: linear-gradient(60deg, rgb(255, 150, 216) 0%, rgb(255, 232, 246) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+#home .title .job {
+  font-size: 1.6rem;
+  position: absolute;
+  top: -15%;
+  left: 2%;
+}
+#home .title .name {
+  font-family: "Nothing You Could Do";
+  font-size: 2.7rem;
+}
+#home .play {
+  opacity: 1;
+}
+#home .scroll {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+}
+#home .scroll p, #home .scroll .fa-caret-down {
+  color: #FF96D8;
+}
+#home .scroll p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#home .scroll .fa-caret-down {
+  font-size: 2.5rem;
+}
+#home .scroll.bounce {
+  animation: bounce 0.6s;
+}
+
+#aboutme {
+  position: relative;
+}
+#aboutme .a_box {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+}
+#aboutme .a_box .photo {
+  width: 350px;
+  height: 400px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  overflow: hidden;
+  transform: translateY(20%);
+  margin-right: 2%;
+}
+#aboutme .a_box .photo .photo_wrap {
+  display: flex;
+  width: 700px;
+}
+#aboutme .a_box .photo .photo_wrap .photo_slide {
+  width: 350px;
+  height: 400px;
+}
+#aboutme .a_box .photo .photo_wrap .photo_slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateX(-7%);
+}
+#aboutme .a_box .intro {
+  margin-left: 40px;
+  padding: 70px 0;
+}
+#aboutme .a_box .intro .s_title {
+  font-size: 3rem;
+  font-weight: 100;
+  width: 570px;
+  margin-bottom: 15px;
+  font-family: "Black Han Sans";
+}
+#aboutme .a_box .intro .s_title span {
+  color: #FF96D8;
+  font-size: 5rem;
+}
+#aboutme .a_box .intro .motto {
+  font-family: "Orbit";
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+#aboutme .a_box .intro .info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+#aboutme .a_box .intro .info .education h4, #aboutme .a_box .intro .info .license h4 {
+  color: #FF96D8;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 15px 0px;
+}
+#aboutme .a_box .intro .info .education ul li, #aboutme .a_box .intro .info .license ul li {
+  line-height: 40px;
+}
+#aboutme .a_box .intro .info .education ul li span, #aboutme .a_box .intro .info .license ul li span {
+  font-weight: bold;
+}
+#aboutme .a_box .intro .info .education {
+  margin-right: 5%;
+  width: 63%;
+}
+#aboutme .a_box .intro .info .license {
+  width: 45%;
+}
+
+#skills .s_box .high, #skills .s_box .middle {
+  margin-bottom: 110px;
+}
+#skills .s_box .high, #skills .s_box .middle, #skills .s_box .low {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills .s_box .high ul, #skills .s_box .middle ul, #skills .s_box .low ul {
+  display: flex !important;
+  justify-content: space-evenly;
+  width: 550px;
+}
+#skills .s_box .high ul img, #skills .s_box .middle ul img, #skills .s_box .low ul img {
+  width: 70px;
+}
+#skills .s_box .low ul {
+  width: 350px;
+  margin-left: 205px;
+}
+#skills .s_box .status {
+  position: relative;
+  transform: translateY(25%);
+}
+#skills .s_box .status p {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  font-weight: bold;
+  top: 6%;
+}
+#skills .s_box .status .bar_box {
+  width: 600px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+#skills .s_box .status .bar {
+  height: 30px;
+  background-image: linear-gradient(to right, #ff96d8, #ff88d3, #ff7acd, #ff6ac7, #ff59c1);
+  position: absolute;
+  border-radius: 50px;
+}
+#skills .s_box .high p {
+  right: 20%;
+}
+#skills .s_box .high .bar {
+  width: 500px;
+}
+#skills .s_box .middle p {
+  right: 37%;
+}
+#skills .s_box .middle .bar {
+  width: 400px;
+}
+#skills .s_box .low p {
+  left: 40%;
+}
+#skills .s_box .low .bar {
+  width: 300px;
+}
+#skills .extra {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #5e5e5e;
+}
+
+#projects h3 {
+  margin-bottom: 50px !important;
+}
+#projects .box {
+  display: flex;
+}
+#projects .project_box ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 650px;
+  justify-content: space-around;
+}
+#projects .project_box ul .p_list {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+#projects .project_box ul .p_list .thumb {
+  width: 130%;
+  filter: 0.3s;
+  transition: 0.3s;
+  transform: translateX(-8%);
+}
+#projects .project_box ul .p_list .t_s {
+  width: 134% !important;
+}
+#projects .project_box ul .p_list .t_d, #projects .project_box ul .p_list .t_v {
+  transform: translate(-10%, 4%) !important;
+}
+#projects .project_box ul .p_list .detail {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: none;
+}
+#projects .project_box ul .p_list .detail a {
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#projects .project_box ul .p_list .detail a:first-child {
+  margin-bottom: 20px;
+}
+#projects .project_box ul .p_list .detail a:hover {
+  background-color: #000;
+}
+#projects .project_box ul .p_list:hover .detail {
+  display: block !important;
+}
+#projects .project_box ul .p_list:hover img {
+  filter: blur(1px);
+  scale: 1.1;
+}
+#projects .project_box ul .p_list:nth-child(2) img {
+  width: 100%;
+}
+#projects .project_box ul .p_list:last-child img {
+  transform: translateX(-15%);
+}
+#projects .explain {
+  margin-left: 40px;
+}
+#projects .explain h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#projects .explain .how {
+  margin-bottom: 20px;
+  width: 100%;
+  line-height: 30px;
+}
+#projects .explain .mention_e {
+  color: #ccc;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+#projects .explain .short_explain .explain_box {
+  background-color: #fff;
+  width: 600px;
+  height: 400px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 70px 0px 70px;
+}
+#projects .explain .short_explain .explain_box .explain_text {
+  display: none;
+  padding: 0 10%;
+  height: 260px;
+  margin-top: -20px;
+}
+#projects .explain .short_explain .explain_box .explain_text li {
+  line-height: 30px;
+}
+#projects .explain .short_explain .explain_box .explain_text li span {
+  font-weight: bold;
+}
+#projects .explain .short_explain .explain_box .flag_top {
+  transform: translate(30%, -20%);
+}
+#projects .explain .short_explain .explain_box .flag_bottom {
+  transform: translate(500%, -40%);
+}
+#projects .explain .short_explain .show {
+  display: block !important;
+}
+
+#contact p {
+  font-family: "Anton";
+  line-height: 30px;
+}
+#contact .contact_box {
+  display: flex;
+  margin-left: 10%;
+}
+#contact ul {
+  width: 50%;
+  padding: 10% 0;
+}
+#contact ul .contact_title {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+#contact ul .contact_info {
+  font-family: "Orbit";
+  margin-bottom: 30px;
+}
+#contact .review {
+  width: 50%;
+  position: relative;
+  height: 810px;
+  overflow: hidden;
+  transform: translateY(-5%);
+}
+#contact .review .text {
+  position: absolute;
+  padding: 30px 60px;
+  margin-top: 30px;
+}
+#contact .review .r_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#contact .review .r_text {
+  line-height: 40px;
+}
+#contact .review img {
+  width: 100%;
+  height: 610px;
+}/*# sourceMappingURL=main.css.map */

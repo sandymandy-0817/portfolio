@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nothing+You+Could+Do&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Do+Hyeon&family=Nothing+You+Could+Do&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Do+Hyeon&family=Nothing+You+Could+Do&family=Noto+Sans+KR:wght@100..900&family=Orbit&display=swap");
+* {
+  color: #333;
+  font-family: "Orbit", arial, sans-serif;
+  font-size: 16px;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff4e4;
+}
+
+article {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#aboutme, #skills, #projects, #contact {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 7.5%;
+}
+
+h2, h3 {
+  font-family: "Anton";
+}
+
+h3 {
+  margin-bottom: 100px;
+  font-size: 2.3rem;
+}
+
+.act {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.act .nav .on a {
+  color: #FF96D8 !important;
+}
+.act button {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.top {
+  background-color: #ff96d8;
+  padding: 15px;
+  border-radius: 50%;
+  position: fixed;
+  right: 2%;
+  bottom: 6%;
+  z-index: 100;
+  display: none;
+}
+.top .fa-chevron-up {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  transition: 1s;
+}
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+header h1 img {
+  width: 100px;
+}
+header nav {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav .nav {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  text-align: center;
+}
+header nav .nav li {
+  width: 90px;
+  position: relative;
+}
+header nav .nav li a {
+  color: #3a3a3a;
+}
+header nav .nav li span {
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background-color: #FF96D8;
+  margin-top: 10px;
+  transition: opacity 0.3s, transform 0.3s;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  display: block;
+}
+header nav .nav li:nth-child(2) span {
+  width: 80px !important;
+}
+header nav .nav .on a {
+  color: #FF96D8;
+  font-weight: bold;
+}
+header nav .nav .on span {
+  opacity: 1;
+  transform: translateX(-50%) scaleX(1);
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 1% 0;
+  transform: translateY(34%);
+}
+footer address {
+  width: 400px;
+  margin: 0 auto;
+  line-height: 25px;
+}/*# sourceMappingURL=common.css.map */
