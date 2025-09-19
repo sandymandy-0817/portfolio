@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="./script/common.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>김성경의 포트폴리오</title>
+</head>
+<body>
+    <header>
+        <div class="header_box">
+            <h1>
+                <a href="index.html" title="메인페이지로 이동">
+                    <img src="./images/logo.png" alt="상단로고">
+                </a>
+            </h1>
+            <nav>
+                <ul class="nav">
+                    <li class="on"><a href="#home" title="Home">Home</a><span></span></li>
+                    <li><a href="#aboutme" title="About Me">About Me</a><span></span></li>
+                    <li><a href="#skills" title="Skills">Skills</a><span></span></li>
+                    <li><a href="#projects" title="Projects">Projects</a><span></span></li>
+                    <li><a href="#contact" title="Contact">Contact</a><span></span></li>
+                </ul>
+            </nav>
+            <ul class="page_nav">
+                <li><a href="#home" title="Home" class="dot"></a></li>
+                <li><a href="#aboutme" title="About Me" class="dot"></a></li>
+                <li><a href="#skills" title="Skills" class="dot"></a></li>
+                <li><a href="#projects" title="Projects" class="dot"></a></li>
+                <li><a href="#contact" title="Contact" class="dot"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <a href="#" title="상단으로 가기" class="top"><i class="fa-solid fa-chevron-up"></i></a>
+        <div class="modal_box">
+            <div class="modal">
+                <p class="m_title">&#x203B;&nbsp;안내&nbsp;&#x203B;</p>
+                <p>본 페이지는 <span>비영리적 개인 포트폴리오 페이지</span>입니다.</p><br>
+                <p>일부 내용 및 이미지 등은 출처가 따로 있을 수 있습니다.</p>
+                <p>해상도 1920px * 1080px 환경에 최적화 되어있습니다.</p>
+                <p class="button">
+                    <input type="button" class="close" value="닫기">
+                    <input type="button" class="cd1" value="오늘 하루 그만보기">
+                </p>
+            </div>
+        </div>
+        <article id="home">
+            <div class="bg_box"><span style="display: none;">배경</span></div>
+            <div class="title">
+                <p class="job">웹퍼블리셔/프론트엔드 개발자</p>
+                <h2>Portfolio</h2>
+                <p class="name">Kim, Sung Kyong</p>
+            </div>
+            <div class="scroll">
+                <a href="#aboutme">SCROLL</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </article>
+        <article id="aboutme">
+            <div style="margin: 0 auto; width: 1200px;">
+                <h3>About Me</h3>
+                <div class="a_box">
+                    <div class="photo">
+                        <div class="photo_wrap">
+                            <div class="photo_slide">
+                                <img src="./images/self.jpg" alt="aboutme">
+                            </div>
+                            <div class="photo_slide">
+                                <img src="./images/self2.jpg" alt="aboutme2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <p class="s_title">웹퍼블리셔/프론트엔드 개발자 <br><span>김성경</span>입니다.</p>
+                        <p class="motto">💪끈기로 어떤 문제든지 🎯해결하는 사람</p>
+                        <div class="info">
+                            <div class="education">
+                                <h4>Education</h4>
+                                <ul>
+                                    <li>- <span>『프로젝트기반』프론트엔드 개발자 양성(Figma/React/Next.js/PHP/Mysql/chatGPT)</span> 교육 수료 (2024.12 ~ 2025.07)</li>
+                                    <li>- <span>숭실대학교</span>(2021.03 ~ 2025.02) 졸업</li>
+                                    <li>- <span>Wells Internation School</span> 중&middot;고등학교 졸업 <br>(2014.09 ~ 2020.05)</li>
+                                </ul>
+                            </div>
+                            <div class="license">
+                                <h4>License</h4>
+                                <ul>
+                                    <li>- <span>TOEIC</span>(890점)</li>
+                                    <li>- <span>GTQi(그래픽기술자격)</span>1급</li>
+                                    <li>- <span>운전면허 자동 보통</span>2급</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="skills">
+            <div class="bg_box2"><span style="display: none;">배경</span></div>
+            <div style="margin: 0 auto; width: 1200px;">
+                <h3>Skills</h3>
+                <div class="s_box">
+                    <div class="high glass-card">
+                        <ul>
+                            <li><img src="./images/skill/html5.png" alt="html5"></li>
+                            <li><img src="./images/skill/css3.png" alt="css3"></li>
+                            <li><img src="./images/skill/jquery.png" alt="jquery"></li>
+                            <li><img src="./images/skill/sass.png" alt="sass"></li>
+                            <li><img src="./images/skill/figma.png" alt="figma"></li>
+                        </ul>
+                        <p class="extra">&#x203B; 위 도구들은 AI의 도움을 거의 받지 않고 수행 가능합니다.&#x203B;</p>
+                    </div>
+                    <div class="middle glass-card">
+                        <ul>
+                            <li><img src="./images/skill/bootstrap.png" alt="bootstrap"></li>
+                            <li><img src="./images/skill/illust.png" alt="adobe illust"></li>
+                            <li><img src="./images/skill/photo.png" alt="adobe photoshop"></li>
+                            <li><img src="./images/skill/git.png" alt="github"></li>
+                            <li><img src="./images/skill/js.png" alt="react"></li>
+                        </ul>
+                        <p class="extra">&#x203B; 위 도구들은 AI의 도움을 조금 받으며 수행 가능합니다.&#x203B;</p>
+                    </div>
+                    <div class="low glass-card">
+                        <ul>
+                            <li><img src="./images/skill/mysql.png" alt="mysql"></li>
+                            <li><img src="./images/skill/php.png" alt="php"></li>
+                            <li><img src="./images/skill/react.png" alt="javascript"></li>
+                        </ul>
+                        <p class="extra">&#x203B; 위 도구들은 AI의 도움받아야 하며, 해보았지만 아직 많이 미숙합니다.&#x203B;</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="projects">
+            <div style="margin: 0 auto; width: 1200px;">
+                <h3>Projects</h3>
+                <div class="box">
+                    <div class="project_box">
+                        <ul>
+                            <li class="p_list">
+                                <div class="detail">
+                                    <a href="./mobis.html">자세히 보기</a>
+                                    <a href="https://sandymandy-0817.github.io/Hyundai-Mobis-Renewal/">사이트 바로가기</a>
+                                </div>
+                                <img src="./images/mobis_slide/mobis_thumb.png" alt="현대모비스" class="thumb">
+                            </li>
+                            <li class="p_list">
+                                <div class="detail">
+                                    <a href="./todolist.html">자세히 보기</a>
+                                    <a href="https://sandymandy-0817.github.io/todolist/">사이트 바로가기</a>
+                                </div>
+                                <img src="./images/todolist/todolist_thumb.png" alt="todolist" class="thumb t_s">
+                            </li>
+                            <li class="p_list">
+                                <div class="detail">
+                                    <a href="./verygoodtour.html">자세히 보기</a>
+                                    <a href="http://ksk3570.dothome.co.kr/verygoodtour/">사이트 바로가기</a>
+                                </div>
+                                <img src="./images/verygoodtour/verygoodtour_mobile.png" alt="참좋은여행" class="thumb t_v">
+                            </li>
+                            <li class="p_list">
+                                <div class="detail">
+                                    <a href="./digong.html">자세히 보기</a>
+                                    <a href="https://web-project-frontend-mbha4admd1f88f85.sel4.cloudtype.app/">사이트 바로가기</a>
+                                </div>
+                                <img src="./images/digong/tablet.png" alt="디공" class="thumb t_d">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="explain">
+                        <h4>작업한 프로젝트 목록입니다.</h4>
+                        <p class="how">프로젝트에 마우스를 올리면 해당 프로젝트에 대한 간략한 설명이 아래에 표시됩니다.</p>
+                        <p class="mention_e">&#x203B;&nbsp;프로젝트에 대해 더 자세히 알고 싶다면 자세히 보기를 눌러주세요.&nbsp;&#x203B;</p>
+                        <div class="short_explain">
+                            <div class="explain_box">
+                                <img src="./images/flag_top.png" alt="책갈피" class="flag_top">
+                                <div class="explain_text show">
+                                    <ul>
+                                        <li><span>작업 유형</span>: 개인</li>
+                                        <li><span>개발 언어</span>: HTML5, Sass, JQuery, Fontawesome, Google Fonts</li>
+                                        <li><span>개발 도구</span>: Figma, VS Code, DevTools, Lighthouse, Github(배포)</li>
+                                        <li><span>프로젝트명</span>: 현대모비스 홈페이지 리모델링</li>
+                                        <li><span>제작 기간</span>: 1 Week</li>
+                                        <li><span>사이트 유형</span>: PC</li>
+                                        <li><span>해상도</span>: 1440px</li>
+                                    </ul>
+                                </div>
+                                <div class="explain_text">
+                                    <ul>
+                                        <li><span>작업 유형</span>: 개인</li>
+                                        <li><span>개발 언어</span>: React, CSS3, JQuery, HTML</li>
+                                        <li><span>개발 도구</span>: Figma, VS Code, DevTools, Lighthouse, GitHub(배포)</li>
+                                        <li><span>프로젝트명</span>: To Do List</li>
+                                        <li><span>제작 기간</span>: 1 Week</li>
+                                        <li><span>사이트 유형</span>: PC</li>
+                                        <li><span>해상도</span>: 1440px</li>
+                                    </ul>
+                                </div>
+                                <div class="explain_text">
+                                    <ul>
+                                        <li><span>작업 유형</span>: 팀 프로젝트 (기획 담당 및 제작 보조)</li>
+                                        <li><span>개발 언어</span>: HTML5, CSS, JQuery, Fontawesome, Google Fonts, PHP, MySQL</li>
+                                        <li><span>개발 도구</span>: Figma, VS Code, DevTools, Lighthouse, GitHub(배포)</li>
+                                        <li><span>프로젝트명</span>: 참좋은 여행 홈페이지 리모델링</li>
+                                        <li><span>제작 기간</span>: 2 Weeks</li>
+                                        <li><span>사이트 유형</span>: 반응형 (PC, Tablet, Mobile)</li>
+                                        <li><span>해상도</span>: 1440px, 1024px, 747px</li>
+                                    </ul>
+                                </div>
+                                <div class="explain_text">
+                                    <ul>
+                                        <li><span>작업 유형</span>: 팀 프로젝트 (기획 담당 및 제작 보조)</li>
+                                        <li><span>개발 언어</span>: React, HTML5, CSS, JQuery, Fontawesome, Google Fonts, MySQL, Cloud Type</li>
+                                        <li><span>개발 도구</span>: Figma, VS Code, DevTools, Lighthouse, GitHub(버전 관리), CloudType(배포)</li>
+                                        <li><span>프로젝트명</span>: 디자인 공유 사이트 자체 제작</li>
+                                        <li><span>제작 기간</span>: 2 Weeks</li>
+                                        <li><span>사이트 유형</span>: 반응형 (PC, Tablet, Mobile)</li>
+                                        <li><span>해상도</span>: 1440px, 1024px, 747px</li>
+                                    </ul>
+                                </div>
+                                <img src="./images/flag_bottom.png" alt="책갈피" class="flag_bottom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+        <article id="contact">
+            <div style="margin: 0 auto; width: 1200px;">
+                <h3>Contact</h3>
+                <div class="contact_box">
+                    <div>
+                        <img src="./images/contact.jpg" alt="contact" class="con_img">
+                        <ul>
+                            <li>
+                                <p class="contact_title">Email</p>
+                                <p class="contact_info">📧 ksk3570@gmail.com</p>
+                            </li>
+                            <li>
+                                <p class="contact_title">Phone</p>
+                                <p class="contact_info">📞 010-3075-3570</p>
+                            </li>
+                            <li>
+                                <p class="contact_title">SNS</p>
+                                <p class="contact_info">📱 카카오톡 ID : ksk3570</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="review">
+                        <div class="text">
+                            <p class="r_title">마치며 .</p>
+                            <p class="r_text">전공과 무관하게 웹 개발자의 길을 선택하게 된 데에는 <span>'만들어내는 즐거움'</span>이 가장 큰 이유였습니다. 아이디어를 구상하고, 디자인하며, 코드를 한 줄씩 쌓아 올려 웹사이트라는 결과물을 만들어내는 과정에서 큰 기쁨을 느낍니다. 단순히 주어진 일을 하는 것을 넘어, <span>기획부터 완성까지 전반적인 과정을 주도</span>하며 저만의 색깔이 담긴 결과물을 만들어내는 것을 즐깁니다.<br> 이 포트폴리오 사이트를 포함해 그동안 진행한 여러 프로젝트들을 보며 느꼈던 뿌듯함과 성취감은 제가 이 일을 계속할 수 있는 <span>강력한 원동력</span>이 되어주었습니다. 이는 단순한 개인적 만족을 넘어, 더 나은 결과물을 만들기 위한 자발적인 탐구와 도전으로 이어졌습니다.<br> 저는 회사에 입사해서도 이러한 열정을 잃지 않고, 제가 가진 기술과 성장 의지를 바탕으로 회사의 서비스 발전에 <span>실질적으로 기여하는 개발자</span>로 성장하고 싶습니다. 사용자가 만족하고 저 또한 자부심을 느낄 수 있는 결과물을 함께 만들어나가고 싶습니다.
+                            </p>
+                        </div>
+                        <img src="./images/note.png" alt="후기">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <address>&copy; 2025 Kim, Sung Kyong. Copyright All Resereved.<br> This site was built with HTML5, SASS, JQuery</address>
+    </footer>
+</body>
+</html>

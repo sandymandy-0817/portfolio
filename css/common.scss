@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nothing+You+Could+Do&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Do+Hyeon&family=Nothing+You+Could+Do&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {color: #333; font-family: "Noto Stans KR", arial, sans-serif; font-size: 16px;}
+html, body {scroll-behavior: smooth;}
+article {height: 100vh; box-sizing: border-box;}
+#aboutme, #skills, #projects, #contact {width: 100%; margin: 0 auto; padding: 7.5% 0;}
+h2, h3 {font-family: 'Anton';}
+h3 {margin-bottom: 30px; font-size: 2.3rem;}
+
+.act {background-color: #fff; 
+    .nav {
+        .on {
+            a {color: #FF96D8 !important;}
+        }
+    }
+    button {background-color: rgb(255, 255, 255, 0.4);}
+}
+
+.top {background-color: #ff96d8; padding: 15px; border-radius: 50%; position: fixed; right: 2%; bottom: 6%; z-index: 100; display: none;
+    .fa-chevron-up {color: #fff; font-size: 1.3rem;}
+}
+
+header {height: 90px; width: 100%; padding: 10px 0px; display: flex; align-items: center; position: fixed; left: 0px; top: 0px; z-index: 1000; transition: 1s;
+    .header_box {width: 1200px; margin: 0 auto;
+        h1 {position: absolute; top: 50%; left: 14%; transform: translateY(-50%);
+            img {width: 90px;}
+        }
+        nav {position: absolute; right: 8%; top: 50%; transform: translateY(-50%);
+            .nav {display: flex; width: 500px; justify-content: space-between; text-align: center;
+                li {width: 90px; position: relative;
+                    a {color: #3a3a3a}
+                    span {position: absolute; width: 70px; height: 3px; background-color: #FF96D8; margin-top: 10px;transition: opacity 0.3s, transform 0.3s; left: 50%; transform: translateX(-50%) scaleX(0); transform-origin: center; display: block;}
+                }
+                li:nth-child(2) {
+                    span {width: 80px  !important;}
+                }
+                .on {
+                    a {color: #FF96D8; font-weight: bold;}
+                    span {opacity: 1; transform: translateX(-50%) scaleX(1);}
+                }
+                li:hover a {color: #ff96d8 !important; font-weight: bold; transition: 0.3s;}
+            }
+        }
+    }
+}
+
+footer {background-color: #f1f1f1; padding: 1% 0; transform: translateY(34%); margin-top: 90px; text-align: center; 
+    address {width: 400px; margin: 0 auto; line-height: 25px; font-size: 12px;}
+}

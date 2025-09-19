@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/detail.css" type="text/css">
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/common.js"></script>
+    <script src="./script/sub.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>김성경의 포트폴리오</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html" title="메인페이지로 이동">
+                    <img src="./images/logo.png" alt="상단로고">
+                </a>
+            </h1>
+            <a class="back"><i class="fa-solid fa-left-long"></i> 뒤로가기</a>
+        </div>
+    </header>
+
+    <main>
+        <a href="#" title="상단으로 가기" class="top"><i class="fa-solid fa-chevron-up"></i></a>
+        <h3>Project Details</h3>
+        <div class="detail_top">
+            <div class="monitor">
+                <div class="slide">
+                    <div class="slide_wrap">
+                        <div class="slide_box">
+                            <img src="./images/digong/slide/0. 표지.png" alt="상세1">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./images/digong/digong.PNG" alt="상세2">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./images/digong/slide/detail.PNG" alt="상세3">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./images/digong/slide/login.PNG" alt="상세4">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./images/digong/slide/profile.PNG" alt="상세5">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./images/digong/slide/edit.PNG" alt="상세6">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./images/digong/slide/upload.PNG" alt="상세7">
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/desktop.png" alt="슬라이드" class="mac todo_top">
+            </div>
+            <div class="project_info">
+                <h4>참좋은 여행 홈페이지 리모델링</h4>
+                <ul>
+                    <li><span>작업 유형</span>: 팀 프로젝트 (기획 담당 및 제작 보조)</li>
+                    <li><span>개발 언어</span>: React, HTML5, CSS, JQuery, Fontawesome, Google Fonts, MySQL, Cloud Type</li>
+                    <li><span>개발 도구</span>: Figma, VS Code</li>
+                    <li><span>프로젝트명</span>: 디자인 공유 사이트 자체 제작</li>
+                    <li><span>제작 기간</span>: 2 Weeks</li>
+                    <li><span>사이트 유형</span>: 반응형 (PC, Tablet, Mobile)</li>
+                    <li><span>해상도</span>: 1440px</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h4>Preview</h4>
+        <div class="prototype">
+            <img src="./images/digong/pc.png" alt="pc" class="pc">
+            <img src="./images/digong/tablet.png" alt="tablet" class="tablet showcase_t">
+            <img src="./images/digong/mobile.png" alt="mobile" class="mobile showcase_m">
+        </div>
+        <div class="detail detail1">
+            <video src="./images/digong/digong_main.mp4" loop muted autoplay></video>
+            <div class="d_explain">
+                <p class="ex_t">서버에 저장 되어 있는 데이터 출력</p>
+                <ul class="ex_txt">
+                    <li>- 페이지 로딩 시 메인 화면에 글씨와 이미지들 왼쪽/오른쪽으로 <br>나뉘어 변수에 저장 후 useEffect로 순차적으로 나오도록 설정</li>
+                    <li>- 사이트 특성 상 서버에 올라간 사진들의 큰 크기로 인해 발생할 로딩 속도 저하를 개선하기 위해 서버에 저장 된 데이터 수 만큼 빈 박스로 로딩 후 데이터 불러오도록 설정</li>
+                </ul>
+            </div>
+        </div>
+        <div class="detail detail2">
+            <div class="d_explain" style="margin-top: 3%;">
+                <p class="ex_t">카테고리 메뉴</p>
+                <ul class="ex_txt">
+                    <li>- filter를 통해 카테고리 클릭 시 해당하는 작품 글 출력 및 클릭한 카테고리 버튼 서식 변경</li>
+                    <li>- 카테고리를 'categories'라는 목록 변수에 저장하여 변수에 데이터를 추가하거나 수정, 삭제하면 바로 페이지에 반영되도록 함</li>
+                    <li>- 모바일 해상도일 때 나오는 모바일 토글 메뉴에서 카테고리들을 확인 할 수 있으며, 선택 시 메인 화면에 있는 해당 카테고리 버튼이 자동으로 서식이 변경되며 선택</li>
+                </ul>
+            </div>
+            <video src="./images/digong/digong_cate.mp4" loop muted autoplay></video>
+        </div>
+        <div class="detail detail3">
+            <video src="./images/digong/digong_detail.mp4" loop muted autoplay></video>
+            <div class="d_explain" style="margin-top: 3%;">
+                <p class="ex_t">작품 게시글 상세보기</p>
+                <ul class="ex_txt">
+                    <li>- 보고자 하는 작품 게시글 클릭 시 모달창으로 작품 제목, 설명, 작품 상세 페이지, 좋아요, 댓글, 공유하기 기능이 가능</li>
+                    <li>- 작품 상세 정보, 공유 외에 댓글 및 좋아요 기능은 로그인 해야 이용 가능 하도록 설정</li>
+                    <li>- 댓글 작성 시 바로 출력, 좋아요 클릭 시 '좋아요'한 글 목록에 저장</li>
+                    <li>- 바깥 부분 클릭 시 모달창 닫히게 설정</li>
+                </ul>
+            </div>
+        </div>
+        <div class="detail detail4">
+            <div class="d_explain" style="margin-top: 3%;">
+                <p class="ex_t">내 프로필 페이지</p>
+                <ul class="ex_txt">
+                    <li>- 로그인시 헤더에 로그인한 유저의 닉네임과 프로필 사진이 나오도록 설정</li>
+                    <li>- 유저 프로필 사진 클릭 시 로그인 상태에서 이용가능한 '내 프로필', '작품 등록하기', '로그아웃' 메뉴 나오게 설정</li>
+                    <li>- '내 프로필' 클릭 시 현재 로그인한 유저의 프로필 페이지로 이동</li>
+                    <li>- 프로필 페이지에서 현재 로그인한 유저가 올린 작품글 목록과 좋아요를 누른 목록을 출력</li>
+                    <li>- 작품/좋아요 목록에서 게시글 클릭 시 해당 작품의 상세 모달창이 띄워지도록 설정</li>
+                </ul>
+            </div>
+            <video src="./images/digong/digong_like.mp4" loop muted autoplay></video>
+        </div>
+        <div class="detail detail5">
+            <video src="./images/digong/digong_upload.mp4" loop muted autoplay></video>
+            <div class="d_explain" style="margin-top: 2%;">
+                <p class="ex_t">작품 게시글 등록하기</p>
+                <ul class="ex_txt">
+                    <li>- '작품 등록하기' 클릭 시 등록 페이지로 이동</li>
+                    <li>- 작품 제목, 카테고리 선택, 파일 등록은 필수, 작품 설명은 선택 사항</li>
+                    <li>- 작품 사진 등록 시 한 번에 여러개 선택하여 업로드</li>
+                    <li>- 작품 등록시 등록 되었다는 안내창이 나오며, 확인 클릭 시 방금 등록한 작품 게시글의 상세 페이지가 나오게 설정</li>
+                    <li>- 방금 올린 작품의 상세 페이지 바깥쪽 클릭하여 닫을 시 메인 페이지로 이동</li>
+                </ul>
+            </div>
+        </div>
+        <div class="more">
+            <a href="http://ksk3570.dothome.co.kr/verygoodtour/">사이트 바로가기</a>
+            <a href="https://www.figma.com/deck/DnVgShW0pF2GiJE2DWT8x1/3%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-DiGong?node-id=1-163&t=kmNaryKZJfvk2hk8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Figma 기획서 바로가기</a>
+        </div>
+    </main>
+
+    <footer>
+        <address>© 2025 Kim, Sung Kyong. Copyright All Resereved. This site was built with HTML5, SASS, JQuery</address>
+    </footer>
+</body>
+</html>
